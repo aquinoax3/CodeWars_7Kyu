@@ -45,6 +45,7 @@ const productArray = numbers => numbers.map(el => numbers.reduce((prev, curr) =>
 
 
 // brute force, my function pasts all the test but there were some issues 
+
 // function productArray(numbers) {
 
 //     const result = []
