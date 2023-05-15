@@ -12,19 +12,29 @@
 // Note: There will be at least two words in the given string!
 
 
+// Optimized Approach
 
 function toAcronym(inp) {
-
-    const array = inp.split(" ")
-    let result = ""
-
-
-    for (word of array) {
-        result += word[0]
-    }
-
-
-    return result.toUpperCase()
-
+    return inp.split(" ").map(word => word[0]).join("").toUpperCase()
 }
+
+
+
+
+
+// // Brute Force
+// function toAcronym(inp) {
+
+//     const array = inp.split(" ")
+//     let result = ""
+
+
+//     for (word of array) {
+//         result += word[0]
+//     }
+
+
+//     return result.toUpperCase()
+
+// }
 
