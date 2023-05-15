@@ -8,6 +8,20 @@
 
 
 
+// Optimized Approach 
+
+Array.prototype.remove_ = function (integer_list, values_list) {
+    const newArray = integer_list.filter(num => !values_list.includes(num))
+
+    return newArray
+}
+
+
+
+
+
+
+//Brute Force Approach
 
 Array.prototype.remove_ = function (integer_list, values_list) {
     const array = []
@@ -29,3 +43,5 @@ Array.prototype.remove_ = function (integer_list, values_list) {
     return array
 
 }
+
+
