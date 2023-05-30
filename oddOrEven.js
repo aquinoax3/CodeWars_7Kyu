@@ -18,11 +18,25 @@
 
 
 function oddOrEven(array) {
-    let sum = 0
+    if (array.length <= 0) return 'even'
 
-    for (num of array) {
-        sum += num
-    }
+    const sum = array.reduce((acc, curr) => acc + curr)
 
-    return sum % 2 === 0 ? "even" : "odd"
+    return sum % 2 === 0 ? 'even' : 'odd'
 }
+
+
+
+
+// First Approach
+
+
+// function oddOrEven(array) {
+//     let sum = 0
+
+//     for (num of array) {
+//         sum += num
+//     }
+
+//     return sum % 2 === 0 ? "even" : "odd"
+// }
