@@ -10,14 +10,22 @@
 // Note: Test cases contain valid input only - i.e. a string array or an empty array; and each word will have enough letters.
 
 
+// optimized solution 
 function nthChar(words) {
-    let result = ""
-
-
-    for (let i = 0; i < words.length; i++) {
-        let j = i + 1
-        result += words[i][i]
-    }
-
-    return result
+    return words.map((word, idx) => word[idx]).join("")
 }
+
+
+
+// first solution
+// function nthChar(words) {
+//     let result = ""
+
+
+//     for (let i = 0; i < words.length; i++) {
+//         let j = i + 1
+//         result += words[i][i]
+//     }
+
+//     return result
+// }
