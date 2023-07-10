@@ -8,18 +8,26 @@
 
 // Good luck!
 
-
-
+// optimized solution
 function capitalize(s, arr) {
-    let result = ""
-
-    for (let i = 0; i < s.length; i++) {
-        if (arr.includes(i)) {
-            result += s[i].toUpperCase()
-        } else {
-            result += s[i]
-        }
-    }
-
-    return result
+    return s.split("").map((letter, idx) => arr.includes(idx) ? letter.toUpperCase() : letter).join("")
 };
+
+
+
+
+// first solution 
+
+// function capitalize(s, arr) {
+//     let result = ""
+
+//     for (let i = 0; i < s.length; i++) {
+//         if (arr.includes(i)) {
+//             result += s[i].toUpperCase()
+//         } else {
+//             result += s[i]
+//         }
+//     }
+
+//     return result
+// };
