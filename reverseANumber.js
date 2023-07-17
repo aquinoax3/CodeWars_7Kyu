@@ -7,6 +7,15 @@
 // -456 -> -654
 // 1000 ->    1
 
+
+// Cleaner Code
+function reverseNumber(n) {
+    const onlyDigits = String(n).replace(/\D/i, "").split("").reverse().join("")
+
+    return n > 0 ? Number(onlyDigits) : Number(-onlyDigits)
+}
+
+//First attempt 
 function reverseNumber(n) {
     if (n > 0) {
         const onlyDigits = String(n).replace(/\D/i, "").split("").reverse().join("")
