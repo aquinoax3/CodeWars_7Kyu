@@ -7,6 +7,21 @@
 // If the total of both even and odd numbers are identical return: "Even and Odd are the same"
 
 
+
+
+// cleaner option
+function evenOrOdd(str) {
+    let odd = 0
+    let even = 0
+
+    str.split("").map(num => num % 2 === 0 ? even += Number(num) : odd += Number(num))
+
+    return odd === even ? 'Even and Odd are the same' : odd > even ? 'Odd is greater than Even' : 'Even is greater than Odd'
+}
+
+
+
+// first attempt
 function evenOrOdd(str) {
     let odd = 0
     let even = 0
