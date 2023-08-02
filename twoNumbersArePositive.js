@@ -24,3 +24,9 @@ function twoArePositive(a, b, c) {
 
     return positive == 2 && negative >= 0
 }
+
+
+// Optimized Code 
+function twoArePositive(a, b, c) {
+    return [...arguments].filter(num => num > 0).length === 2
+}
