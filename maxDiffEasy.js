@@ -7,6 +7,12 @@
 // [1, 2, 3, -4]  //  returns 7 because 3 - (-4) == 7
 
 
+// Cleaner Code
+
+const maxDiff = (list) => list.length <= 1 ? 0 : Math.max(...list) - Math.min(...list)
+
+
+// first attempt 
 function maxDiff(list) {
 
     const high = Math.max(...list)
